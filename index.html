@@ -1,26 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Guitar Fretboard Visualization</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Guitar Fretboard Visualization</title>
-	<link rel="stylesheet" href="./style.css">
+    <body>
+        <div class="content">
+            <div class="fretboard">
+                <div class="guitar-neck">
+                    <div class="fret first"></div>
+                    <div class="fret"></div>
+                    <div class="fret"></div>
+                    <div class="fret"></div>
+                    <div class="fret"></div>
+                    
+                    <ul class="strings">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
 
-</head>
+                    <ul class="open-notes">
+                        <li class="low-e">E</li>
+                        <li class="b">B</li>
+                        <li class="g">G</li>
+                        <li class="d">D</li>
+                        <li class="a">A</li>
+                        <li class="high-e">E</li>
+                    </ul>
+                    <div class="notes">
+                        <div class="mask low-e">
+                            <ul></ul>
+                        </div>
+                        <div class="mask a">
+                            <ul></ul>
+                        </div>
+                        <div class="mask d">
+                            <ul></ul>
+                        </div>
+                        <div class="mask g">
+                            <ul></ul>
+                        </div>
+                        <div class="mask b">
+                            <ul></ul>
+                        </div>
+                        <div class="mask high-e">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="red-dots">
+                        <div class="red-dot low-e">
+                            <ul></ul>
+                        </div>
+                        <div class="red-dot a">
+                            <ul></ul>
+                        </div>
+                        <div class="red-dot d">
+                            <ul></ul>
+                        </div>
+                        <div class="red-dot g">
+                            <ul></ul>
+                        </div>
+                        <div class="red-dot b">
+                            <ul></ul>
+                        </div>
+                        <div class="red-dot high-e">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <ul class="compartment-number"></ul>
+                </div>
+            </div>
+        </div>
+    </body>
 
-<body>
-	<ul class="tabs-control"></ul>
-	<div class="content"></div>
-	
-</body>
-
-
-<div class="scripts">
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-	<script src="./scripts/common.js"></script>
-	<script src="./scripts/note.js"></script>
-	<script src="./scripts/chord.js"></script>
-	<script src="./scripts/main.js"></script>
-</div>
-
+    <div class="scripts">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./scripts/common.js"></script>
+    </div>
 </html>

@@ -27,8 +27,8 @@ h1 {
 .fretboard{
   /* margin-left: 50px; */
   width: 260px;
-  height: 460px;
-  overflow-y:scroll;
+  height: 370px;
+  overflow-y:hidden;
   overflow-x:hidden;
   padding-right: 15px;
 }
